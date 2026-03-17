@@ -357,3 +357,36 @@
   object-fit: cover;
   object-position: top; /* 🔥 โชว์หัวคน ไม่โดนตัด */
 }
+/* ===== Mobile Responsive ===== */
+@media (max-width: 768px) {
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  body {
+    padding: 20px;
+    text-align: center;
+  }
+
+}
