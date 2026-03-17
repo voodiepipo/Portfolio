@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vootichote Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ========== NAVBAR ========== -->
+<nav class="navbar">
+  <div class="navbar-inner">
+    <div class="logo">
+        VOODIE<span>PIPO</span>
+      </div>
+    <ul class="menu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#achievements">Activities</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ========== HERO ========== -->
+<header class="hero reveal">
+  <img src="profile.jpg" alt="Vootichote" class="profile-img">
+
+  <h1>Vootichote Chammunkong</h1>
+
+  <p class="hero-edu">
+    <span class="major">ICT Student - Web & UX/UI Enthusiast</span><br>
+    <span class="school">Mahidol University</span>
+  </p>
+</header>
+
+<!-- ========== ABOUT ========== -->
+<section id="about" class="reveal">
+  <h2>About Me</h2>
+  <p>
+    I am currently studying Information and Communication Technology with a focus
+    on web development and UX/UI. I have experience building small web projects
+    using HTML, CSS, and JavaScript, and I am looking for an opportunity to
+    further develop my skills through an internship.
+  </p>
+</section>
+
+<!-- ========== PROJECTS ========== -->
+<section id="projects" class="reveal">
+  <h2>Projects</h2>
+
+  <div class="project">
+    <h3>Flower Shop Website</h3>
+    <p>
+      A simple front-end website for a flower shop. Designed with a clean layout
+      and responsive design principles, focusing on visual hierarchy and user
+      experience.
+    </p>
+  </div>
+</section>
+
+<!-- ========== Activities ========== -->
+<section id="activities" class="reveal">
+    <h2>Activities</h2>
+  
+    <div class="activity">
+      <h3>Teacher Assistant – English Preparation Course</h3>
+  
+      <p class="activity-desc">
+        Worked as a Teacher Assistant for an English Preparation Course lasting nearly one month.
+        Assisted junior students with lessons, exercises, and classroom activities,
+        and supported instructors throughout the course.
+      </p>
+  
+      <p class="activity-meta">
+        <strong>Language Level:</strong> MUELTS ≈ IELTS 6.5
+      </p>
+  
+      <div class="activity-gallery">
+        <img src="ta1.jpg" alt="Teaching activity">
+        <img src="ta2.jpg" alt="Class activity">
+        <img src="ta3.jpg" alt="Group activity">
+      </div>
+    </div>
+  </section>
+  
+
+<!-- ========== CONTACT ========== -->
+<section id="contact" class="contact-section reveal">
+    <h2>Contact Me</h2>
+  
+    <div class="contact-grid">
+  
+      <a href="tel:+66922686267" class="contact-box clickable">
+        <h3>📞 Call Me</h3>
+        <p>092-268-6267</p>
+      </a>
+  
+      <a href="mailto:Vootichote.p@gmail.com?subject=Internship%20Opportunity"
+         class="contact-box clickable">
+        <h3>✉️ Email Me</h3>
+        <p>Vootichote.p@gmail.com</p>
+      </a>
+  
+      <div class="contact-box">
+        <h3>📍 Location</h3>
+        <p>Bangkok, Thailand</p>
+      </div>
+  
+    </div>
+  </section>
+  
+<!-- ========== SCRIPT ========== -->
+<script src="script.js"></script>
+<script>
+  const navbar = document.querySelector('.navbar');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 10) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
+</script>
+
+</body>
+</html>
