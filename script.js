@@ -13,8 +13,19 @@ function revealOnScroll() {
 }
 
 revealOnScroll();
-window.addEventListener('scroll', revealOnScroll);
+window.addEventListener("scroll", function() {
 
+  // NAV SHADOW
+  const nav = document.querySelector("nav");
+  if (window.scrollY > 10) {
+    nav.classList.add("scrolled");
+  } else {
+    nav.classList.remove("scrolled");
+  }
+
+  revealOnScroll();
+
+});
 // หยุด floating เมื่อเริ่ม scroll
 const profileImg = document.querySelector('.profile-img');
 
@@ -24,3 +35,4 @@ window.addEventListener('scroll', () => {
     profileImg.style.animation = 'none';
   }
 });
+
