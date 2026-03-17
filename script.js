@@ -1,0 +1,26 @@
+const reveals = document.querySelectorAll('.reveal');
+
+function revealOnScroll() {
+  const windowHeight = window.innerHeight;
+  const revealPoint = 100;
+
+  reveals.forEach(element => {
+    const elementTop = element.getBoundingClientRect().top;
+    if (elementTop < windowHeight - revealPoint) {
+      element.classList.add('active');
+    }
+  });
+}
+
+revealOnScroll();
+window.addEventListener('scroll', revealOnScroll);
+
+// หยุด floating เมื่อเริ่ม scroll
+const profileImg = document.querySelector('.profile-img');
+
+
+window.addEventListener('scroll', () => {
+  if (profileImg) {
+    profileImg.style.animation = 'none';
+  }
+});
