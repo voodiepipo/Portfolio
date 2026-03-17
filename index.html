@@ -8,34 +8,30 @@
 </head>
 <body>
 
-<!-- ========== NAVBAR ========== -->
+<!-- NAVBAR -->
 <nav class="navbar">
   <div class="navbar-inner">
-    <div class="logo">
-      VOODIE<span>PIPO</span>
-    </div>
+    <div class="logo">VOODIE<span>PIPO</span></div>
     <ul class="menu">
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
-      <li><a href="#activities">Activities</a></li>
+      <li><a href="#work">Work Experience</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
 </nav>
 
-<!-- ========== HERO ========== -->
+<!-- HERO -->
 <header class="hero reveal">
-  <img src="profile.jpg" alt="Vootichote" class="profile-img">
-
+  <img src="profile.jpg" class="profile-img">
   <h1>Vootichote Chammunkong</h1>
-
   <p class="hero-edu">
-    <span class="major">ICT Student - Web & UX/UI Enthusiast</span><br>
-    <span class="school">Mahidol University</span>
+    ICT Student - Web & UX/UI Enthusiast<br>
+    Mahidol University
   </p>
 </header>
 
-<!-- ========== ABOUT ========== -->
+<!-- ABOUT -->
 <section id="about" class="reveal">
   <h2>About Me</h2>
   <p>
@@ -46,45 +42,68 @@
   </p>
 </section>
 
-<!-- ========== PROJECTS ========== -->
+<!-- PROJECTS (แบบ card) -->
 <section id="projects" class="reveal">
   <h2>Projects</h2>
 
-  <div class="project">
+  <!-- Project 1 -->
+  <div class="project-card">
     <h3>Sipergy – Health & Nutrition Mobile App UI</h3>
     <p>
       Designed a mobile application UI focused on health tracking, nutrition,
       and user engagement. Created user flows including login, dashboard,
       QR scanning, and activity tracking using Figma.
     </p>
-    <!-- ใส่รูปได้ -->
-    <!-- <img src="sipergy.jpg" alt="Sipergy UI"> -->
+  
+    <a href="https://www.figma.com/design/6kekQeemIIF4ik2hHO8zjh/Sipergy?node-id=0-1&t=rPPtf3A8bTZ02Plp-1" 
+       target="_blank" 
+       class="project-link">
+       🔗 View Figma Design
+    </a>
+  
+    <div class="sipergy-gallery">
+      <img src="sipergy1.jpg" alt="Sipergy UI 1">
+      <img src="sipergy2.jpg" alt="Sipergy UI 2">
+      <img src="sipergy3.jpg" alt="Sipergy UI 3">
+      <img src="sipergy4.jpg" alt="Sipergy UI 4">
+      <img src="sipergy5.jpg" alt="Sipergy UI 5">
+    </div>
   </div>
 
-  <div class="project">
+  <!-- Project 2 -->
+  <div class="project-card">
     <h3>Foodier – Restaurant Search Web Application</h3>
     <p>
       Developed a web application that allows users to search and explore restaurants.
-      Designed UI in Figma and implemented a responsive front-end using HTML, CSS,
+      Designed UI in Figma and implemented responsive front-end using HTML, CSS,
       JavaScript, and Node.js.
     </p>
-    <!-- <img src="foodier.jpg" alt="Foodier Web"> -->
+    <img src="foodier.jpg" alt="Foodier">
+    <a href="https://www.figma.com/design/L6pfBOYpQHSHSZ1dqO4KNX/WebDev-X-mhumsap?node-id=65-2&t=Y6QkbqfU9ob3AktO-1"
+       target="_blank"
+       class="project-link">
+       🔗 View Figma Design
+    </a>
+
+    
   </div>
 
-  <div class="project">
+
+  <!-- Project 3 -->
+  <div class="project-card">
     <h3>Turn-Based Strategy Game</h3>
     <p>
       Built a turn-based game using Java (Processing) with object-oriented programming.
-      Implemented player actions, UI components, and core game logic for interactive gameplay.
+      Implemented player actions, UI components, and core game logic.
     </p>
-    <!-- <img src="game.jpg" alt="Game Project"> -->
+    <img src="game.jpg" alt="Game">
   </div>
 
 </section>
 
-<!-- ========== ACTIVITIES ========== -->
-<section id="activities" class="reveal">
-  <h2>Activities</h2>
+<!-- WORK EXPERIENCE (เดิมแต่เปลี่ยนชื่อ) -->
+<section id="work" class="reveal">
+  <h2>Work Experience</h2>
 
   <div class="activity">
     <h3>Teacher Assistant – English Preparation Course</h3>
@@ -99,27 +118,25 @@
       <strong>Language Level:</strong> MUELTS ≈ IELTS 6.5
     </p>
 
-    <div class="activity-gallery">
-      <img src="ta1.jpg" alt="Teaching activity">
-      <img src="ta2.jpg" alt="Class activity">
-      <img src="ta3.jpg" alt="Group activity">
+    <div class="work-gallery">
+      <img src="ta1.jpg" class="main-img">
+      <img src="ta2.jpg">
+      <img src="ta3.jpg">
     </div>
   </div>
 </section>
 
-<!-- ========== CONTACT ========== -->
+<!-- CONTACT (เหมือนเดิม) -->
 <section id="contact" class="contact-section reveal">
   <h2>Contact Me</h2>
 
   <div class="contact-grid">
-
     <a href="tel:+66922686267" class="contact-box clickable">
       <h3>📞 Call Me</h3>
       <p>092-268-6267</p>
     </a>
 
-    <a href="mailto:Vootichote.p@gmail.com?subject=Internship%20Opportunity"
-       class="contact-box clickable">
+    <a href="mailto:Vootichote.p@gmail.com" class="contact-box clickable">
       <h3>✉️ Email Me</h3>
       <p>Vootichote.p@gmail.com</p>
     </a>
@@ -128,23 +145,9 @@
       <h3>📍 Location</h3>
       <p>Bangkok, Thailand</p>
     </div>
-
   </div>
 </section>
 
-<!-- ========== SCRIPT ========== -->
 <script src="script.js"></script>
-<script>
-  const navbar = document.querySelector('.navbar');
-
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 10) {
-      navbar.classList.add('scrolled');
-    } else {
-      navbar.classList.remove('scrolled');
-    }
-  });
-</script>
-
 </body>
 </html>

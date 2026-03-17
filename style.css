@@ -264,4 +264,96 @@
       font-size: 28px;
     }
   }
+  .project-card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
   
+  .project-card img {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+  .exp-card {
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 12px;
+  }
+  /* ===== SIPERGY (เฉพาะ project นี้) ===== */
+  .sipergy-gallery {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 12px;
+  
+    max-width: 700px;
+    margin: 16px auto;
+  }
+  
+  /* รูปทั้งหมด */
+  .sipergy-gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ตัดให้เต็ม ไม่เหลือขอบ */
+    border-radius: 12px;
+  }
+  
+  /* รูปแรก = ตัวใหญ่ */
+  .sipergy-gallery img:first-child {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+  }
+  
+  /* hover */
+  .sipergy-gallery img:hover {
+    transform: scale(1.05);
+    transition: 0.25s;
+  }
+  /* ========== WORK CARD ========== */
+.work-card {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+/* ========== GALLERY ========== */
+.work-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 12px;
+}
+
+/* ✅ รูปใหญ่แนวตั้ง (ซ้าย) */
+.work-gallery .main-img {
+  grid-row: 1 / 3;   /* กิน 2 แถว */
+  height: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* ✅ รูปเล็ก (ขวา บน/ล่าง) */
+.work-gallery img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: 0.25s;
+}
+
+/* hover */
+.work-gallery img:hover {
+  transform: scale(1.05);
+}
+.work-gallery .main-img {
+  grid-row: 1 / 3;
+  max-height: 260px;   /* 🔽 ลดลงจาก 320 */
+  object-fit: cover;
+  object-position: top; /* 🔥 โชว์หัวคน ไม่โดนตัด */
+}
